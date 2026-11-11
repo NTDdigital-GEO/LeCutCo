@@ -10,6 +10,8 @@ A review copy of the paid-ads landing page NTD Digital built for LeCut Construct
 | Bathroom | https://ntddigital-geo.github.io/LeCutCo/?svc=bath |
 | ADU | https://ntddigital-geo.github.io/LeCutCo/?svc=adu |
 | Garage conversion | https://ntddigital-geo.github.io/LeCutCo/?svc=garage |
+| Whole-home remodel | https://ntddigital-geo.github.io/LeCutCo/?svc=whole |
+| New construction | https://ntddigital-geo.github.io/LeCutCo/?svc=new |
 
 Add `&h=2` to any link to see the "Burned by a Contractor Before?" line. The bar at the top of the page switches versions. Ad visitors on lecut.co won't see that bar.
 

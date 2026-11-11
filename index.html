@@ -10,7 +10,8 @@
 </head>
 <body>
 <!-- Preview of the LeCut Construction paid-ads landing page (NTD Digital).
-     Versions: ?svc=bath | ?svc=adu | ?svc=garage, and &h=2 for the
+     Versions: ?svc=bath | ?svc=adu | ?svc=garage | ?svc=whole | ?svc=new,
+     and &h=2 for the
      "Burned before" line. The form is display-only here; it sends
      requests only once the page is installed on lecut.co. -->
 
@@ -360,7 +361,7 @@ window.LCP_PHOTOS = window.LCP_ON_SITE
     </div>
     <div class="lcp-hero-media">
       <img id="lcp-hero-img" alt="" width="1600" height="1067" fetchpriority="high" decoding="async">
-      <script>(function(){var m=/[?&]svc=([a-z]+)/i.exec(location.search),s=m?m[1].toLowerCase():'',u='https://lecut.co/wp-content/uploads/',h={bath:'2025/09/Master-Bathroom-ANd-bedroom-2970-Hallmark-Dr-Belmont6.jpg',bathroom:'2025/09/Master-Bathroom-ANd-bedroom-2970-Hallmark-Dr-Belmont6.jpg',adu:'2025/09/Pergula-and-Gym-1775-Bradford-Way-Livermore_c16.jpg',garage:'2025/08/Renovated-garage-for-office-space.jpg'};var i=document.getElementById('lcp-hero-img'),k=window.LCP_PHOTOS+'lecut-lp-san-jose-kitchen';if(h[s]){i.src=u+h[s];}else{i.sizes='(max-width: 980px) 100vw, 52vw';i.srcset=k+'-800.jpg 800w, '+k+'-1600.jpg 1600w';i.src=k+'-1600.jpg';}})();</script>
+      <script>(function(){var m=/[?&]svc=([a-z]+)/i.exec(location.search),s=m?m[1].toLowerCase():'',u='https://lecut.co/wp-content/uploads/',h={bath:'2025/09/Master-Bathroom-ANd-bedroom-2970-Hallmark-Dr-Belmont6.jpg',bathroom:'2025/09/Master-Bathroom-ANd-bedroom-2970-Hallmark-Dr-Belmont6.jpg',adu:'2025/09/Pergula-and-Gym-1775-Bradford-Way-Livermore_c16.jpg',garage:'2025/08/Renovated-garage-for-office-space.jpg',whole:'new:lecut-lp-aptos-home',home:'new:lecut-lp-aptos-home',new:'2025/09/full-house-1445-Pinehurst-Dr-San-Jose2-1.jpg',construction:'2025/09/full-house-1445-Pinehurst-Dr-San-Jose2-1.jpg'};var i=document.getElementById('lcp-hero-img'),k=window.LCP_PHOTOS+'lecut-lp-san-jose-kitchen';if(h[s]&&h[s].indexOf('new:')===0){k=window.LCP_PHOTOS+h[s].slice(4);h[s]='';}if(h[s]){i.src=u+h[s];}else{i.sizes='(max-width: 980px) 100vw, 52vw';i.srcset=k+'-800.jpg 800w, '+k+'-1600.jpg 1600w';i.src=k+'-1600.jpg';}})();</script>
       <noscript><img src="https://lecut.co/wp-content/uploads/2025/08/belmont-kitchen-reno_optimized.jpg" alt=""></noscript>
       <p class="lcp-hero-cap" data-lcp-t="cap">San Jose kitchen remodel</p>
     </div>
@@ -633,7 +634,13 @@ window.LCP_PHOTOS = window.LCP_ON_SITE
     a2: ['2025/09/Pergula-and-Gym-1775-Bradford-Way-Livermore_c7.jpg', 'Pergola and outdoor kitchen · Livermore', 'Backyard pergola with an outdoor kitchen in Livermore'],
     a3: ['2025/09/full-house-1445-Pinehurst-Dr-San-Jose1.jpg', 'Whole-home remodel + addition · San Jose', 'Exterior of a whole-home remodel and addition in San Jose'],
     g1: ['2025/09/Garage-Conversion-Garage-San-Francisco_6.jpg', 'Garage office with a full storage wall', 'Garage converted into a home office with a wall of storage cabinets'],
-    g2: ['2025/09/Garage-Conversion-Garage-San-Francisco_3.jpg', 'New half bath in the converted garage', 'Half bath with a floating vanity and round mirror added in a converted garage']
+    g2: ['2025/09/Garage-Conversion-Garage-San-Francisco_3.jpg', 'New half bath in the converted garage', 'Half bath with a floating vanity and round mirror added in a converted garage'],
+    w1: ['new/lecut-lp-san-jose-kitchen-800.jpg', 'Whole-home remodel · San Jose', 'Open kitchen in a whole-home remodel in San Jose'],
+    w2: ['2025/09/Bathroom-and-kitchen-208-Surfbird-Isle-Foster-City12.jpg', 'Whole-home remodel · Foster City', 'Kitchen with two islands in a whole-home remodel in Foster City'],
+    w3: ['new/lecut-lp-aptos-kitchen.jpg', 'Whole-home remodel · Aptos', 'White kitchen with a sage tile backsplash in a whole-home remodel in Aptos'],
+    n1: ['2025/09/Pergula-and-Gym-1775-Bradford-Way-Livermore_c19.jpg', 'New detached building · Livermore', 'New detached backyard building with a deck in Livermore'],
+    n2: ['2025/09/full-house-1445-Pinehurst-Dr-San-Jose4.jpg', 'Remodel and new addition · San Jose', 'Front of a San Jose home after a full remodel and new addition'],
+    n3: ['2025/09/Pergula-and-Gym-1775-Bradford-Way-Livermore_c24.jpg', 'Inside the new building · Livermore', 'Vaulted interior of a new detached building in Livermore']
   };
   var VIDEOS = {
     santiago: ['mnKSMAvDAQQ', '2025/09/v1b.jpg', 'Santiago', 'Full-house remodel, San Jose'],
@@ -693,19 +700,33 @@ window.LCP_PHOTOS = window.LCP_ON_SITE
       cap: 'Garage converted into a home office',
       ph: 'e.g. Turn our garage into a guest suite',
       faq: 'garage conversion', gal: ['g1', 'g2', 'a3'], vids: ['santiago', 'bob', 'harold'], ba: ['g', 'k3d', 'r', 's'], hq: 'mikayla', q: ['howard', 'vivi', 'mikayla']
+    },
+    whole: {
+      line: 'See Your Whole-Home Remodel in 3D Before We Build It',
+      sub: 'Kitchen, baths, floors and layout planned together in 3D, then built by one family-owned team, with a project lead on site from demolition to final walkthrough.',
+      cap: 'Aptos whole-home remodel',
+      ph: 'e.g. Open up the kitchen, redo both baths and replace the floors',
+      faq: 'home remodel', gal: ['w1', 'w2', 'w3'], vids: ['harold', 'santiago', 'ari'], ba: ['r', 's', 'k3d', 'a'], hq: 'mikayla', q: ['vivi', 'howard', 'mikayla']
+    },
+    new: {
+      line: 'See Your New Home or Addition in 3D Before We Build It',
+      sub: 'A new home, addition or backyard building planned around how you live: designed in 3D, permitted and built by one team, with a project lead on site from groundwork to final walkthrough.',
+      cap: 'San Jose full remodel and new addition',
+      ph: 'e.g. A new home on our lot, or a detached guest house',
+      faq: 'new build', gal: ['n1', 'n2', 'n3'], vids: ['rachel', 'santiago', 'harold'], ba: ['k3d', 'v3d', 'n3d', 'r'], hq: 'mikayla', q: ['howard', 'mikayla', 'vivi']
     }
   };
   // The page version sets the Contact form's "Select a Service" value, so ad
   // leads arrive already sorted. Values must match that field's options.
-  var SERVICE_LABEL = { kitchen: 'Kitchen remodel', bath: 'Bathroom remodel', adu: 'ADU', garage: 'Garage conversion' };
-  var SERVICE_OPTION = { kitchen: 'Kitchen Remodeling', bath: 'Bathroom Remodeling', adu: 'Accessory Dwelling Unit (ADUS)', garage: 'Garage Conversion' };
+  var SERVICE_LABEL = { kitchen: 'Kitchen remodel', bath: 'Bathroom remodel', adu: 'ADU', garage: 'Garage conversion', whole: 'Whole-home remodel', new: 'New construction' };
+  var SERVICE_OPTION = { kitchen: 'Kitchen Remodeling', bath: 'Bathroom Remodeling', adu: 'Accessory Dwelling Unit (ADUS)', garage: 'Garage Conversion', whole: 'Complete House Remodeling', new: 'Construction' };
 
   /* ---------- helpers ---------- */
   function $(s, el) { return (el || root).querySelector(s); }
   function $$(s, el) { return Array.prototype.slice.call((el || root).querySelectorAll(s)); }
   var params = new URLSearchParams(location.search);
   var svcParam = (params.get('svc') || '').toLowerCase();
-  var svc = { bath: 'bath', bathroom: 'bath', adu: 'adu', garage: 'garage' }[svcParam] || 'kitchen';
+  var svc = { bath: 'bath', bathroom: 'bath', adu: 'adu', garage: 'garage', whole: 'whole', home: 'whole', new: 'new', construction: 'new' }[svcParam] || 'kitchen';
   var useH2 = params.get('h') === '2';
 
   window.dataLayer = window.dataLayer || [];
@@ -801,7 +822,7 @@ window.LCP_PHOTOS = window.LCP_ON_SITE
     bar.className = 'lcp-preview';
     bar.setAttribute('aria-label', 'Preview: switch page version');
     bar.innerHTML = '<span class="lcp-preview-t">Preview version</span>' +
-      [['kitchen', 'Kitchen'], ['bath', 'Bathroom'], ['adu', 'ADU'], ['garage', 'Garage']].map(function (o) {
+      [['kitchen', 'Kitchen'], ['bath', 'Bathroom'], ['adu', 'ADU'], ['garage', 'Garage'], ['whole', 'Whole home'], ['new', 'New construction']].map(function (o) {
         return '<a href="' + link(o[0], useH2) + '"' + (svc === o[0] ? ' aria-current="page"' : '') + '>' + o[1] + '</a>';
       }).join('') +
       '<a class="lcp-preview-h" href="' + link(svc, !useH2) + '"' + (useH2 ? ' aria-current="true"' : '') + '>“Burned before” line: ' + (useH2 ? 'on' : 'off') + '</a>';
